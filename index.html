@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Futurista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/lunaradio.js"></script>
+    <style>
+        body {
+            margin: 0;
+            background-image: url('https://i.postimg.cc/fT2hjqcz/38cfc27b1c60a23c8ec461e82e37ffdc.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Orbitron', sans-serif;
+            color: #00ffcc;
+            overflow: hidden;
+        }
+        #lunaradio {
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 20px #00e6e6, inset 0 0 20px #00e6e6;
+            color: #00ffcc;
+        }
+        h1 {
+            text-align: center;
+            color: #00e6e6;
+            text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6;
+        }
+        .developer-info {
+            text-align: center;
+            color: #9CFF2E;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+        .developer-info a {
+            color: #9CFF2E;
+            text-decoration: none;
+        }
+        /* Efecto de resplandor pulsante en el cover */
+        .lunaradio-cover img {
+            border-radius: 10px;
+            box-shadow: 0 0 20px #00e6e6, 0 0 40px #00bfff, 0 0 60px #33ccff, 0 0 80px #66ffff;
+            animation: pulsatingGlow 1.5s infinite alternate;
+        }
+        @keyframes pulsatingGlow {
+            0% {
+                box-shadow: 0 0 20px #00e6e6, 0 0 40px #00bfff, 0 0 60px #33ccff, 0 0 80px #66ffff;
+            }
+            100% {
+                box-shadow: 0 0 40px #00ff99, 0 0 80px #33ccff, 0 0 120px #66ffff, 0 0 160px #99ffff;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="lunaradio">
+    <h1>Mon Streaming</h1>
+    <div class="developer-info">
+        Modificado por: Hacker056
+    </div>
+</div>
+
+<script src="https://dl.dropboxusercontent.com/s/45u6xzcnnri2re3/jquery-3.2.1.min.js?dl=0" type="text/javascript"></script>
+<script src="https://dl.dropboxusercontent.com/s/ai2ny5smsk07k7m/lunaradio.min.js?dl=0" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $("#lunaradio").lunaradio({
+        userinterface: "big",
+        backgroundcolor: "rgba(0, 0, 0, 0.05)",
+        fontcolor: "#00e6e6",
+        hightlightcolor: "#00e6e6",
+        fontname: "Orbitron",
+        googlefont: "Orbitron:wght@400",
+        fontratio: "0.3",
+        radioname: "Hack FM",
+        scroll: "true",
+        coverimage: "https://i.postimg.cc/QtGDKBpc/04e6d2df58ecfdc3340d135442e7fdb4.jpg",
+        usevisualizer: "fake",
+        coverstyle: "animated",
+        visualizertype: "6",
+        multicolorvisualizer: "true",
+        color1: "#00e6e6",
+        color2: "#00bfff",
+        color3: "#33ccff",
+        color4: "#66ffff",
+        itunestoken: "1000lIPN",
+        metadatatechnic: "corsproxy",
+        streamurl: "https://stream.zeno.fm/mlz2loleyx9vv",
+        streamtype: "radiozeno",
+        volume: "95",
+        autoplay:"true",
+    });
+</script>
+
+</body>
+</html>
